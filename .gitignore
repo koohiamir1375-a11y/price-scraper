@@ -1,0 +1,4 @@
+output.csv
+changes.csv
+__pycache__/
+venv/
