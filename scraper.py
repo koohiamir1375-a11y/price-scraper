@@ -97,6 +97,10 @@ def main():
         print(f"Page {page}: {len(page_rows)} products")
         time.sleep(0.5)
 
+    if not rows:
+        print("No data collected. Existing file left untouched.")
+        return
+
     changes = []
     for r in rows:
         old = previous.get(r["link"])
